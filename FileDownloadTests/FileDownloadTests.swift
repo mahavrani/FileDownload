@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import FileDownload
+@testable import FileDownloadProgress
 
 class FileDownloadTests: XCTestCase {
     

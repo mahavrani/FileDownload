@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		026674CB20D7BBFC0068A38D /* FileDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		026674CB20D7BBFC0068A38D /* FileDownloadProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileDownloadProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		026674CE20D7BBFC0068A38D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		026674D020D7BBFC0068A38D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		026674D320D7BBFC0068A38D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,7 +36,7 @@
 		026674D820D7BBFC0068A38D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		026674DB20D7BBFC0068A38D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		026674DD20D7BBFC0068A38D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		026674E220D7BBFC0068A38D /* FileDownloadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileDownloadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		026674E220D7BBFC0068A38D /* FileDownloadProgressTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileDownloadProgressTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		026674E620D7BBFC0068A38D /* FileDownloadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDownloadTests.swift; sourceTree = "<group>"; };
 		026674E820D7BBFC0068A38D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		026674F320D7C8640068A38D /* DownloadUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadUtil.swift; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 		026674C220D7BBFC0068A38D = {
 			isa = PBXGroup;
 			children = (
-				026674CD20D7BBFC0068A38D /* FileDownload */,
+				026674CD20D7BBFC0068A38D /* FileDownloadProgress */,
 				026674E520D7BBFC0068A38D /* FileDownloadTests */,
 				026674CC20D7BBFC0068A38D /* Products */,
 			);
@@ -72,13 +72,13 @@
 		026674CC20D7BBFC0068A38D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				026674CB20D7BBFC0068A38D /* FileDownload.app */,
-				026674E220D7BBFC0068A38D /* FileDownloadTests.xctest */,
+				026674CB20D7BBFC0068A38D /* FileDownloadProgress.app */,
+				026674E220D7BBFC0068A38D /* FileDownloadProgressTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		026674CD20D7BBFC0068A38D /* FileDownload */ = {
+		026674CD20D7BBFC0068A38D /* FileDownloadProgress */ = {
 			isa = PBXGroup;
 			children = (
 				026674F220D7C7D70068A38D /* Controller */,
@@ -89,6 +89,7 @@
 				026674DD20D7BBFC0068A38D /* Info.plist */,
 				026674D520D7BBFC0068A38D /* FileDownload.xcdatamodeld */,
 			);
+			name = FileDownloadProgress;
 			path = FileDownload;
 			sourceTree = "<group>";
 		};
@@ -129,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		026674CA20D7BBFC0068A38D /* FileDownload */ = {
+		026674CA20D7BBFC0068A38D /* FileDownloadProgress */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 026674EB20D7BBFC0068A38D /* Build configuration list for PBXNativeTarget "FileDownload" */;
+			buildConfigurationList = 026674EB20D7BBFC0068A38D /* Build configuration list for PBXNativeTarget "FileDownloadProgress" */;
 			buildPhases = (
 				026674C720D7BBFC0068A38D /* Sources */,
 				026674C820D7BBFC0068A38D /* Frameworks */,
@@ -141,14 +142,14 @@
 			);
 			dependencies = (
 			);
-			name = FileDownload;
+			name = FileDownloadProgress;
 			productName = HIDFileDownload;
-			productReference = 026674CB20D7BBFC0068A38D /* FileDownload.app */;
+			productReference = 026674CB20D7BBFC0068A38D /* FileDownloadProgress.app */;
 			productType = "com.apple.product-type.application";
 		};
-		026674E120D7BBFC0068A38D /* FileDownloadTests */ = {
+		026674E120D7BBFC0068A38D /* FileDownloadProgressTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 026674EE20D7BBFC0068A38D /* Build configuration list for PBXNativeTarget "FileDownloadTests" */;
+			buildConfigurationList = 026674EE20D7BBFC0068A38D /* Build configuration list for PBXNativeTarget "FileDownloadProgressTests" */;
 			buildPhases = (
 				026674DE20D7BBFC0068A38D /* Sources */,
 				026674DF20D7BBFC0068A38D /* Frameworks */,
@@ -159,9 +160,9 @@
 			dependencies = (
 				026674E420D7BBFC0068A38D /* PBXTargetDependency */,
 			);
-			name = FileDownloadTests;
+			name = FileDownloadProgressTests;
 			productName = HIDFileDownloadTests;
-			productReference = 026674E220D7BBFC0068A38D /* FileDownloadTests.xctest */;
+			productReference = 026674E220D7BBFC0068A38D /* FileDownloadProgressTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -185,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 026674C620D7BBFC0068A38D /* Build configuration list for PBXProject "FileDownload" */;
+			buildConfigurationList = 026674C620D7BBFC0068A38D /* Build configuration list for PBXProject "FileDownloadProgress" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -198,8 +199,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				026674CA20D7BBFC0068A38D /* FileDownload */,
-				026674E120D7BBFC0068A38D /* FileDownloadTests */,
+				026674CA20D7BBFC0068A38D /* FileDownloadProgress */,
+				026674E120D7BBFC0068A38D /* FileDownloadProgressTests */,
 			);
 		};
 /* End PBXProject section */
@@ -249,7 +250,7 @@
 /* Begin PBXTargetDependency section */
 		026674E420D7BBFC0068A38D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 026674CA20D7BBFC0068A38D /* FileDownload */;
+			target = 026674CA20D7BBFC0068A38D /* FileDownloadProgress */;
 			targetProxy = 026674E320D7BBFC0068A38D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -388,6 +389,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S6BL3577UC;
 				INFOPLIST_FILE = FileDownload/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maharani.FileDownload;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -403,6 +405,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S6BL3577UC;
 				INFOPLIST_FILE = FileDownload/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.maharani.FileDownload;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +427,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileDownload.app/FileDownload";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileDownloadProgress.app/FileDownloadProgress";
 			};
 			name = Debug;
 		};
@@ -441,14 +444,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileDownload.app/FileDownload";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileDownloadProgress.app/FileDownloadProgress";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		026674C620D7BBFC0068A38D /* Build configuration list for PBXProject "FileDownload" */ = {
+		026674C620D7BBFC0068A38D /* Build configuration list for PBXProject "FileDownloadProgress" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				026674E920D7BBFC0068A38D /* Debug */,
@@ -457,7 +460,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		026674EB20D7BBFC0068A38D /* Build configuration list for PBXNativeTarget "FileDownload" */ = {
+		026674EB20D7BBFC0068A38D /* Build configuration list for PBXNativeTarget "FileDownloadProgress" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				026674EC20D7BBFC0068A38D /* Debug */,
@@ -466,7 +469,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		026674EE20D7BBFC0068A38D /* Build configuration list for PBXNativeTarget "FileDownloadTests" */ = {
+		026674EE20D7BBFC0068A38D /* Build configuration list for PBXNativeTarget "FileDownloadProgressTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				026674EF20D7BBFC0068A38D /* Debug */,
