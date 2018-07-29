@@ -1,15 +1,15 @@
 //
-//  HIDFileDownloadTests.swift
-//  HIDFileDownloadTests
+//  FileDownloadTests.swift
+//  FileDownloadTests
 //
 //  Created by Salute on 18/06/18.
 //  Copyright © 2018 Maharani. All rights reserved.
 //
 
 import XCTest
-@testable import HIDFileDownload
+@testable import FileDownload
 
-class HIDFileDownloadTests: XCTestCase {
+class FileDownloadTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

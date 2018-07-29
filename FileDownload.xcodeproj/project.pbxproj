@@ -10,10 +10,11 @@
 		026674CF20D7BBFC0068A38D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026674CE20D7BBFC0068A38D /* AppDelegate.swift */; };
 		026674D120D7BBFC0068A38D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026674D020D7BBFC0068A38D /* ViewController.swift */; };
 		026674D420D7BBFC0068A38D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026674D220D7BBFC0068A38D /* Main.storyboard */; };
-		026674D720D7BBFC0068A38D /* HIDFileDownload.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 026674D520D7BBFC0068A38D /* HIDFileDownload.xcdatamodeld */; };
+		026674D720D7BBFC0068A38D /* FileDownload.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 026674D520D7BBFC0068A38D /* FileDownload.xcdatamodeld */; };
 		026674D920D7BBFC0068A38D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026674D820D7BBFC0068A38D /* Assets.xcassets */; };
 		026674DC20D7BBFC0068A38D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026674DA20D7BBFC0068A38D /* LaunchScreen.storyboard */; };
-		026674E720D7BBFC0068A38D /* HIDFileDownloadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026674E620D7BBFC0068A38D /* HIDFileDownloadTests.swift */; };
+		026674E720D7BBFC0068A38D /* FileDownloadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026674E620D7BBFC0068A38D /* FileDownloadTests.swift */; };
+		026674F420D7C8640068A38D /* DownloadUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026674F320D7C8640068A38D /* DownloadUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		026674CB20D7BBFC0068A38D /* HIDFileDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HIDFileDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		026674CB20D7BBFC0068A38D /* FileDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		026674CE20D7BBFC0068A38D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		026674D020D7BBFC0068A38D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		026674D320D7BBFC0068A38D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -35,9 +36,10 @@
 		026674D820D7BBFC0068A38D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		026674DB20D7BBFC0068A38D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		026674DD20D7BBFC0068A38D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		026674E220D7BBFC0068A38D /* HIDFileDownloadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HIDFileDownloadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		026674E620D7BBFC0068A38D /* HIDFileDownloadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIDFileDownloadTests.swift; sourceTree = "<group>"; };
+		026674E220D7BBFC0068A38D /* FileDownloadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileDownloadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		026674E620D7BBFC0068A38D /* FileDownloadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDownloadTests.swift; sourceTree = "<group>"; };
 		026674E820D7BBFC0068A38D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		026674F320D7C8640068A38D /* DownloadUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +63,8 @@
 		026674C220D7BBFC0068A38D = {
 			isa = PBXGroup;
 			children = (
-				026674CD20D7BBFC0068A38D /* HIDFileDownload */,
-				026674E520D7BBFC0068A38D /* HIDFileDownloadTests */,
+				026674CD20D7BBFC0068A38D /* FileDownload */,
+				026674E520D7BBFC0068A38D /* FileDownloadTests */,
 				026674CC20D7BBFC0068A38D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,41 +72,66 @@
 		026674CC20D7BBFC0068A38D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				026674CB20D7BBFC0068A38D /* HIDFileDownload.app */,
-				026674E220D7BBFC0068A38D /* HIDFileDownloadTests.xctest */,
+				026674CB20D7BBFC0068A38D /* FileDownload.app */,
+				026674E220D7BBFC0068A38D /* FileDownloadTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		026674CD20D7BBFC0068A38D /* HIDFileDownload */ = {
+		026674CD20D7BBFC0068A38D /* FileDownload */ = {
+			isa = PBXGroup;
+			children = (
+				026674F220D7C7D70068A38D /* Controller */,
+				026674F120D7C7BE0068A38D /* View */,
+				026674D820D7BBFC0068A38D /* Assets.xcassets */,
+				026674F520D7C89E0068A38D /* Utils */,
+				026674DA20D7BBFC0068A38D /* LaunchScreen.storyboard */,
+				026674DD20D7BBFC0068A38D /* Info.plist */,
+				026674D520D7BBFC0068A38D /* FileDownload.xcdatamodeld */,
+			);
+			path = FileDownload;
+			sourceTree = "<group>";
+		};
+		026674E520D7BBFC0068A38D /* FileDownloadTests */ = {
+			isa = PBXGroup;
+			children = (
+				026674E620D7BBFC0068A38D /* FileDownloadTests.swift */,
+				026674E820D7BBFC0068A38D /* Info.plist */,
+			);
+			path = FileDownloadTests;
+			sourceTree = "<group>";
+		};
+		026674F120D7C7BE0068A38D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				026674D220D7BBFC0068A38D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		026674F220D7C7D70068A38D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				026674CE20D7BBFC0068A38D /* AppDelegate.swift */,
 				026674D020D7BBFC0068A38D /* ViewController.swift */,
-				026674D220D7BBFC0068A38D /* Main.storyboard */,
-				026674D820D7BBFC0068A38D /* Assets.xcassets */,
-				026674DA20D7BBFC0068A38D /* LaunchScreen.storyboard */,
-				026674DD20D7BBFC0068A38D /* Info.plist */,
-				026674D520D7BBFC0068A38D /* HIDFileDownload.xcdatamodeld */,
 			);
-			path = HIDFileDownload;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		026674E520D7BBFC0068A38D /* HIDFileDownloadTests */ = {
+		026674F520D7C89E0068A38D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				026674E620D7BBFC0068A38D /* HIDFileDownloadTests.swift */,
-				026674E820D7BBFC0068A38D /* Info.plist */,
+				026674F320D7C8640068A38D /* DownloadUtil.swift */,
 			);
-			path = HIDFileDownloadTests;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		026674CA20D7BBFC0068A38D /* HIDFileDownload */ = {
+		026674CA20D7BBFC0068A38D /* FileDownload */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 026674EB20D7BBFC0068A38D /* Build configuration list for PBXNativeTarget "HIDFileDownload" */;
+			buildConfigurationList = 026674EB20D7BBFC0068A38D /* Build configuration list for PBXNativeTarget "FileDownload" */;
 			buildPhases = (
 				026674C720D7BBFC0068A38D /* Sources */,
 				026674C820D7BBFC0068A38D /* Frameworks */,
@@ -114,14 +141,14 @@
 			);
 			dependencies = (
 			);
-			name = HIDFileDownload;
+			name = FileDownload;
 			productName = HIDFileDownload;
-			productReference = 026674CB20D7BBFC0068A38D /* HIDFileDownload.app */;
+			productReference = 026674CB20D7BBFC0068A38D /* FileDownload.app */;
 			productType = "com.apple.product-type.application";
 		};
-		026674E120D7BBFC0068A38D /* HIDFileDownloadTests */ = {
+		026674E120D7BBFC0068A38D /* FileDownloadTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 026674EE20D7BBFC0068A38D /* Build configuration list for PBXNativeTarget "HIDFileDownloadTests" */;
+			buildConfigurationList = 026674EE20D7BBFC0068A38D /* Build configuration list for PBXNativeTarget "FileDownloadTests" */;
 			buildPhases = (
 				026674DE20D7BBFC0068A38D /* Sources */,
 				026674DF20D7BBFC0068A38D /* Frameworks */,
@@ -132,9 +159,9 @@
 			dependencies = (
 				026674E420D7BBFC0068A38D /* PBXTargetDependency */,
 			);
-			name = HIDFileDownloadTests;
+			name = FileDownloadTests;
 			productName = HIDFileDownloadTests;
-			productReference = 026674E220D7BBFC0068A38D /* HIDFileDownloadTests.xctest */;
+			productReference = 026674E220D7BBFC0068A38D /* FileDownloadTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -158,7 +185,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 026674C620D7BBFC0068A38D /* Build configuration list for PBXProject "HIDFileDownload" */;
+			buildConfigurationList = 026674C620D7BBFC0068A38D /* Build configuration list for PBXProject "FileDownload" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -171,8 +198,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				026674CA20D7BBFC0068A38D /* HIDFileDownload */,
-				026674E120D7BBFC0068A38D /* HIDFileDownloadTests */,
+				026674CA20D7BBFC0068A38D /* FileDownload */,
+				026674E120D7BBFC0068A38D /* FileDownloadTests */,
 			);
 		};
 /* End PBXProject section */
@@ -204,7 +231,8 @@
 			files = (
 				026674D120D7BBFC0068A38D /* ViewController.swift in Sources */,
 				026674CF20D7BBFC0068A38D /* AppDelegate.swift in Sources */,
-				026674D720D7BBFC0068A38D /* HIDFileDownload.xcdatamodeld in Sources */,
+				026674D720D7BBFC0068A38D /* FileDownload.xcdatamodeld in Sources */,
+				026674F420D7C8640068A38D /* DownloadUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				026674E720D7BBFC0068A38D /* HIDFileDownloadTests.swift in Sources */,
+				026674E720D7BBFC0068A38D /* FileDownloadTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +249,7 @@
 /* Begin PBXTargetDependency section */
 		026674E420D7BBFC0068A38D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 026674CA20D7BBFC0068A38D /* HIDFileDownload */;
+			target = 026674CA20D7BBFC0068A38D /* FileDownload */;
 			targetProxy = 026674E320D7BBFC0068A38D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -359,9 +387,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S6BL3577UC;
-				INFOPLIST_FILE = HIDFileDownload/Info.plist;
+				INFOPLIST_FILE = FileDownload/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maharani.HIDFileDownload;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maharani.FileDownload;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -374,9 +402,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S6BL3577UC;
-				INFOPLIST_FILE = HIDFileDownload/Info.plist;
+				INFOPLIST_FILE = FileDownload/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maharani.HIDFileDownload;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maharani.FileDownload;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -390,13 +418,13 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S6BL3577UC;
-				INFOPLIST_FILE = HIDFileDownloadTests/Info.plist;
+				INFOPLIST_FILE = FileDownloadTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maharani.HIDFileDownloadTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maharani.FileDownloadTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HIDFileDownload.app/HIDFileDownload";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileDownload.app/FileDownload";
 			};
 			name = Debug;
 		};
@@ -407,20 +435,20 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S6BL3577UC;
-				INFOPLIST_FILE = HIDFileDownloadTests/Info.plist;
+				INFOPLIST_FILE = FileDownloadTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maharani.HIDFileDownloadTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maharani.FileDownloadTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HIDFileDownload.app/HIDFileDownload";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileDownload.app/FileDownload";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		026674C620D7BBFC0068A38D /* Build configuration list for PBXProject "HIDFileDownload" */ = {
+		026674C620D7BBFC0068A38D /* Build configuration list for PBXProject "FileDownload" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				026674E920D7BBFC0068A38D /* Debug */,
@@ -429,7 +457,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		026674EB20D7BBFC0068A38D /* Build configuration list for PBXNativeTarget "HIDFileDownload" */ = {
+		026674EB20D7BBFC0068A38D /* Build configuration list for PBXNativeTarget "FileDownload" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				026674EC20D7BBFC0068A38D /* Debug */,
@@ -438,7 +466,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		026674EE20D7BBFC0068A38D /* Build configuration list for PBXNativeTarget "HIDFileDownloadTests" */ = {
+		026674EE20D7BBFC0068A38D /* Build configuration list for PBXNativeTarget "FileDownloadTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				026674EF20D7BBFC0068A38D /* Debug */,
@@ -450,13 +478,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		026674D520D7BBFC0068A38D /* HIDFileDownload.xcdatamodeld */ = {
+		026674D520D7BBFC0068A38D /* FileDownload.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				026674D620D7BBFC0068A38D /* HIDFileDownload.xcdatamodel */,
 			);
 			currentVersion = 026674D620D7BBFC0068A38D /* HIDFileDownload.xcdatamodel */;
-			path = HIDFileDownload.xcdatamodeld;
+			path = FileDownload.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

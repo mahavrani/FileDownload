@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  HIDFileDownload
+//  FileDownload
 //
-//  Created by Salute on 18/06/18.
+//  Created by Maharani on 18/06/18.
 //  Copyright © 2018 Maharani. All rights reserved.
 //
 
@@ -38,6 +38,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
 
+    func application(_ application: UIApplication, handleEventsForBackgroundURLSession identifier: String, completionHandler: @escaping () -> Void) {
+        debugPrint("handleEventsForBackgroundURLSession: \(identifier)")
+        completionHandler()
+    }
+    
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
@@ -53,7 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "HIDFileDownload")
+        let container = NSPersistentContainer(name: "FileDownload")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

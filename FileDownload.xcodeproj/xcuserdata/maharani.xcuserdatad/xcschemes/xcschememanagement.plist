@@ -4,10 +4,23 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>HIDFileDownload.xcscheme</key>
+		<key>FileDownload.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>026674CA20D7BBFC0068A38D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>026674E120D7BBFC0068A38D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
